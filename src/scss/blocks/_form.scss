@@ -1,0 +1,58 @@
+.from {
+    padding: 12px 16px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+}
+
+.form__label {
+    padding-left: 36px;
+    display: grid;
+    gap: 8px;
+    position: relative;
+
+    span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.form__label--map {
+    &::before {
+        background-image: url('./../img/icons/map.svg');
+    }
+}
+
+.form__label--date {
+    &::before {
+        background-image: url('./../img/icons/calendar.svg');
+    }
+}
+
+.form__input {
+    font-size: 14px;
+    font-weight: 450;
+    line-height: normal;
+
+    &::placeholder {
+        color: var(--text-muted);
+    }
+}
+
+.form__line {
+    width: 1px;
+    height: 24px;
+    background-color: #909090;
+}
