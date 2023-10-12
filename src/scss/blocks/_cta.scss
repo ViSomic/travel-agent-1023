@@ -1,0 +1,52 @@
+.cta {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--accent);
+    overflow: hidden;
+}
+
+.cta__row {
+    position: relative;
+    padding-left: 180px;
+    padding-right: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    &::before {
+        position: absolute;
+
+        content: "";
+        top: -105px;
+        left: -78px;
+        width: 237px;
+        height: 273px;
+        background-image: url('./../../img/subscribe/subscribe-pin-bg.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+.cta__text {
+    display: grid;
+    gap: 4px;
+}
+
+.cta_title {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cta_subtitle {
+    color: #F0F0F0;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.cta__form {
+    flex-grow: 1;
+}

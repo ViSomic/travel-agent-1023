@@ -37,6 +37,12 @@ img {
 	}
 }
 
+.title-3 {
+	font-size: 36px;
+	font-weight: 500;
+	line-height: normal;
+}
+
 .text {
 	color: var(--text-muted);
 	font-size: 18px;
@@ -46,5 +52,4 @@ img {
 
 .muted {
 	color: var(--text-muted);
-	font-weight: 450;
 }

@@ -1,0 +1,40 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 32px;
+    align-self: stretch;
+
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px 0px rgba(23, 28, 31, 0.23);
+}
+
+.feedback__rating {
+    display: flex;
+    gap: 4px;
+
+    img {
+        width: 20px;
+    }
+}
+
+.feedback__text {
+    font-size: 16px;
+}
+
+.feedback__author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.feedback__author-photo {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.feedback__author-data {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
