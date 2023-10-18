@@ -1,23 +1,23 @@
 <section class="testimonials">
     <div class="container">
         <div class="testimonials__grid">
-            <div class="testimonials__col">
-                @@include('./elements/feedback.html')
-                @@include('./elements/feedback.html')
-                @@include('./elements/feedback.html')
-                @@include('./elements/feedback.html')
+            
+            <div class="testimonials__col swiper-container" id="feedback-swiper-1">
+                <div class="swiper-wrapper">
+                    @@loop('./elements/feedback.html', '../data/testimonials-1.json')
+                </div>
             </div>
-            <div class="testimonials__col">
-                @@include('./elements/feedback.html')
-                @@include('./elements/feedback.html')
-                @@include('./elements/feedback.html')
-                @@include('./elements/feedback.html')
+
+            <div class="testimonials__col swiper-container" id="feedback-swiper-2">
+                <div class="swiper-wrapper">
+                    @@loop('./elements/feedback.html', '../data/testimonials-2.json')
+                </div>
             </div>
-            <div class="testimonials__col">
-                @@include('./elements/feedback.html')
-                @@include('./elements/feedback.html')
-                @@include('./elements/feedback.html')
-                @@include('./elements/feedback.html')
+
+            <div class="testimonials__col swiper-container" id="feedback-swiper-3">
+                <div class="swiper-wrapper">
+                    @@loop('./elements/feedback.html', '../data/testimonials-3.json')
+                </div>
             </div>
         </div>
     </div>
